@@ -278,6 +278,10 @@
                         pleasure when using this crazy feature.</p>
                 </div>
             </div>
+            <input type="radio" id="dude-1-box" name="dudes" checked hidden>
+            <input type="radio" id="dude-2-box" name="dudes" hidden>
+            <input type="radio" id="dude-3-box" name="dudes" hidden>
+            <input type="radio" id="dude-4-box" name="dudes" hidden>
             <div class="row cards-slider">
                 <div class="row slider">
                     <article id="dude-1">
@@ -298,7 +302,7 @@
                         <p>“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so
                             far there have been no problems. LaslesVPN always the best”.</p>
                     </article>
-                    <article>
+                    <article id="dude-2">
                         <div class="row">
                             <div class="person">
                                 <div class="person-img">
@@ -315,7 +319,7 @@
                         </div>
                         <p>“I like it because I like to travel far and still can connect with high speed.”.</p>
                     </article>
-                    <article>
+                    <article id="dude-3">
                         <div class="row">
                             <div class="person">
                                 <div class="person-img">
@@ -333,7 +337,7 @@
                         <p>“This is very unusual for my business that currently requires a virtual private network that
                             has high security.”.</p>
                     </article>
-                    <article>
+                    <article id="dude-4">
                         <div class="row">
                             <div class="person">
                                 <div class="person-img">
@@ -355,14 +359,14 @@
             </div>
             <div class="row pagination-row">
                 <div class="pagination">
-                    <div class="page-point page-point-highlight" id="point-1"></div>
-                    <div class="page-point" id="point-2"></div>
-                    <div class="page-point" id="point-3"></div>
-                    <div class="page-point" id="point-4"></div>
+                    <label for="dude-1-box"><span class="page-point " id="point-1"></span></label>
+                    <label for="dude-2-box"><span class="page-point " id="point-2"></span></label>
+                    <label for="dude-3-box"><span class="page-point " id="point-3"></span></label>
+                    <label for="dude-4-box"><span class="page-point " id="point-4"></span></label>
                 </div>
                 <div class="controllers">
-                    <button class="button main-button-color main-button-radius"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="button main-button-color-highlight"><i class="fa-solid fa-arrow-right"></i></button>
+                    <label for="dude-1-box"><button class="button main-button-color main-button-radius" id="left-button"><i class="fa-solid fa-arrow-left"></i></button></label>
+                    <label for="dude-4-box"><button class="button main-button-color main-button-radius" id="right-button"><i class="fa-solid fa-arrow-right"></i></button></label>
                 </div>
             </div>
         </div>

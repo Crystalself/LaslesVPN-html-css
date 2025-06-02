@@ -9,8 +9,9 @@ html {
     line-height: 1.5;
 }
 
-
-
+label{
+    cursor: pointer;
+}
 
 body {
     font-family: "Rubik", sans-serif;
@@ -447,7 +448,7 @@ header .buttons-div {
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
-    height: 100vh;
+    height: fit-content;
 }
 .plans .row button {
     padding: 0.75rem 4rem;
@@ -508,7 +509,7 @@ header .buttons-div {
         height: fit-content ;
     }
     .plans .row {
-        height: fit-content ;
+        height: 100% ;
     }
 }
 @media (max-width: 1300px) {
@@ -519,18 +520,13 @@ header .buttons-div {
     .plans {
         height: fit-content;
     }
-    .plans .row article {
-        height: fit-content ;
-    }
 }
 
 
 .plans article button{
     pointer-events: none;
 }
-.plans article label{
-    cursor: pointer;
-}
+
 /*plans end*/
 /*network styles*/
 .network {
@@ -622,6 +618,7 @@ width: 70%;
     gap: 3rem;
     padding-left: 10%;
     position: relative;
+    right: 0;
 }
 .star-icon{
     color: #FEA250;
@@ -638,9 +635,6 @@ width: 70%;
     padding: 2rem;
     border-radius: 10px;
     border: 2px solid #DDDDDD;
-}
-.reviews #dude-1 {
-    border: 2px solid #F53838;
 }
 .reviews .row .person{
     height: 100%;
@@ -671,15 +665,19 @@ width: 70%;
     gap: 1rem;
     align-items: center;
 }
+.reviews .pagination label {
+    display: inline-block;
+
+}
 .page-point {
+    display: block;
     height: 1rem;
     width: 1rem;
     border-radius: 0.5rem;
     background-color: #DDE0E4;
 }
 .page-point-highlight {
-    width: 3rem;
-    background-color: #F53838;
+
 }
 .reviews .controllers {
     height: 100%;
@@ -712,6 +710,76 @@ width: 70%;
          height: 254px;
      }
  }
+.reviews .pagination-row .controllers button{
+    pointer-events: none;
+}
+.reviews #dude-1-box:checked ~ .cards-slider .slider #dude-1 {
+    border: 2px solid #F53838;
+}
+
+.reviews #dude-2-box:checked ~ .cards-slider .slider #dude-2 {
+    border: 2px solid #F53838;
+}
+.reviews #dude-3-box:checked ~ .cards-slider .slider #dude-3 {
+    border: 2px solid #F53838;
+}
+.reviews #dude-4-box:checked ~ .cards-slider .slider #dude-4 {
+    border: 2px solid #F53838;
+}
+.reviews #dude-1-box:checked ~ .pagination-row .pagination #point-1 {
+    width: 3rem;
+    background-color: #F53838;
+}
+.reviews #dude-2-box:checked ~ .pagination-row .pagination #point-2 {
+    width: 3rem;
+    background-color: #F53838;
+}
+.reviews #dude-3-box:checked ~ .pagination-row .pagination #point-3 {
+    width: 3rem;
+    background-color: #F53838;
+}
+.reviews #dude-4-box:checked ~ .pagination-row .pagination #point-4 {
+    width: 3rem;
+    background-color: #F53838;
+}
+.reviews #dude-4-box:checked ~ .cards-slider .slider {
+    right: 100%;
+    transition: 1s ease-in-out;
+}
+.reviews #dude-4-box:checked ~ .pagination-row .controllers #left-button {
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+}
+.reviews #dude-3-box:checked ~ .pagination-row .controllers #right-button {
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+}
+.reviews #dude-2-box:checked ~ .pagination-row .controllers #right-button {
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+}
+.reviews #dude-1-box:checked ~ .pagination-row .controllers #right-button {
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+}
+.reviews #dude-3-box:checked ~ .cards-slider .slider {
+    right: 0;
+    transition: 1s ease-in-out;
+}
+.reviews #dude-2-box:checked ~ .cards-slider .slider {
+    right: 0;
+    transition: 1s ease-in-out;
+}
+.reviews #dude-1-box:checked ~ .cards-slider .slider {
+    right: 0;
+    transition: 1s ease-in-out;
+}
+
+
 /*reviews end*/
 /*subscribe styles*/
 .subscribe{
