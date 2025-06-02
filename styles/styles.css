@@ -412,7 +412,7 @@ header .buttons-div {
 /*plans styles*/
 /*TODO: make a radio button t switch selected card*/
 .plans {
-    height: 100vh;
+    height: 120vh;
 }
 .plans .topic {
     height: fit-content;
@@ -447,7 +447,7 @@ header .buttons-div {
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
-    height: calc(100% - 120px);
+    height: 100vh;
 }
 .plans .row button {
     padding: 0.75rem 4rem;
@@ -479,7 +479,10 @@ header .buttons-div {
         height: fit-content;
     }
     .plans .row article {
-        height: 100vh ;
+        height: fit-content ;
+    }
+    .plans .row {
+        height: fit-content ;
     }
 }
 @media (max-width: 1300px) {
@@ -491,7 +494,7 @@ header .buttons-div {
         height: fit-content;
     }
     .plans .row article {
-        height: 100vh ;
+        height: fit-content ;
     }
 }
 
