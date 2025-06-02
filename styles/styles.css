@@ -130,8 +130,11 @@ header .row {
 
 
 header {
-    padding: 2rem 0;
+    padding: 2rem 0 1rem 0;
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header .logo {
@@ -142,6 +145,7 @@ header .logo {
 header ul {
     flex-basis: 40%;
     order: 2;
+    transition: 2s;
 }
 
 header .main-button-radius {
@@ -179,7 +183,8 @@ header .buttons-div {
         right: 30px;
         background-color: white;
         padding: 1rem;
-        border-radius: 0 0 10px 10px;
+        height: fit-content;
+        box-shadow: 0 8px 8px 4px rgba(13, 16, 37, 0.1);
     }
 
     header .logo {
@@ -197,23 +202,29 @@ header .buttons-div {
     }
 
     #menu-btn:checked ~ .buttons-div {
-        display: none;
-    }
+         display: none;
+     }
 
     header ul.row button {
         display: block;
     }
-
-    #menu-btn:checked ~ ul.row {
-        display: flex;
+    header  ul.row {
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px;
-        right: 30px;
+        width: 100%;
+        height: fit-content;
+        top: -400px;
+        left: 0;
         background-color: white;
         padding: 1rem;
-        border-radius: 0 0 10px 10px;
+        box-shadow: 0 8px 8px 4px rgba(13, 16, 37, 0.1);
     }
+    #menu-btn:checked ~ ul.row {
+        display: flex;
+        top: 80px;
+    }
+
 }
 
 /*header end*/
@@ -413,7 +424,7 @@ header .buttons-div {
 /*plans styles*/
 /*TODO: make a radio button t switch selected card*/
 .plans {
-    height: 120vh;
+    height: 900px;
 }
 .plans .topic {
     height: fit-content;
@@ -456,7 +467,7 @@ header .buttons-div {
 
 .plans .row article {
     padding: 4rem;
-    height: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -501,17 +512,6 @@ header .buttons-div {
 }
 
 
-@media (max-height: 700px) {
-    .plans {
-        height: fit-content;
-    }
-    .plans .row article {
-        height: fit-content ;
-    }
-    .plans .row {
-        height: 100% ;
-    }
-}
 @media (max-width: 1300px) {
     .plans .row {
         flex-wrap: wrap;
