@@ -139,6 +139,9 @@
                     </p>
                 </div>
                 <div class="row">
+                    <input type="radio" id="free" name="plan-selected" hidden>
+                    <input type="radio" id="standard" name="plan-selected" hidden>
+                    <input type="radio" id="premium" name="plan-selected" checked hidden>
                     <article class="plan-card" id="free-plan">
                         <div class="top">
                             <div class="plan-img">
@@ -162,7 +165,7 @@
                         </ul>
                         <div class="bottom">
                             <h2>Free</h2>
-                            <button class="button main-button-color main-button-radius">select</button>
+                            <label for="free"><button class="button main-button-color main-button-radius">select</button></label>
                         </div>
                     </article>
                     <article class="plan-card" id="standard-plan">
@@ -185,10 +188,13 @@
                             <li>
                                 <span class="check-icon"><i class="fa-solid fa-check"></i></span> Works on All Devices
                             </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span> Connect Anywhere
+                            </li>
                         </ul>
                         <div class="bottom">
                             <h2>$9 <span>/mo</span></h2>
-                            <button class="button main-button-color main-button-radius">select</button>
+                            <label for="standard"><button class="button main-button-color main-button-radius">select</button></label>
                         </div>
                     </article>
                     <article class="plan-card" id="premium-plan">
@@ -211,10 +217,16 @@
                             <li>
                                 <span class="check-icon"><i class="fa-solid fa-check"></i></span> Works on All Devices
                             </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span> Connect Anywhere
+                            </li>
+                            <li>
+                                <span class="check-icon"><i class="fa-solid fa-check"></i></span> Get New Features
+                            </li>
                         </ul>
                         <div class="bottom">
                             <h2>$12 <span>/mo</span></h2>
-                            <button class="button main-button-color-highlight main-button-radius">select</button>
+                            <label for="premium"><button class="button main-button-color main-button-radius">select</button></label>
                         </div>
                     </article>
                 </div>

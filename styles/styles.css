@@ -464,8 +464,34 @@ header .buttons-div {
     border-radius: 10px;
     border: 2px solid #DDDDDD;
 }
-.plans .row #premium-plan {
+
+.plans #premium:checked ~ #premium-plan{
     border: 2px solid #F53855;
+}
+.plans #premium:checked ~ #premium-plan button{
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+}
+.plans #standard:checked ~ #standard-plan{
+    border: 2px solid #F53855;
+}
+.plans #standard:checked ~ #standard-plan button{
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+}
+.plans #free:checked ~ #free-plan{
+    border: 2px solid #F53855;
+}
+
+.plans #free:checked ~ #free-plan button{
+    background-color: #F53838;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
 }
 .plans ul {
     display: flex;
@@ -499,7 +525,12 @@ header .buttons-div {
 }
 
 
-
+.plans article button{
+    pointer-events: none;
+}
+.plans article label{
+    cursor: pointer;
+}
 /*plans end*/
 /*network styles*/
 .network {
